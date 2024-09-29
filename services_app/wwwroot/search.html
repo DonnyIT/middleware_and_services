@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search User by ID</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search User by ID</h1>
+
+        <nav>
+            <ul class="nav nav-pills">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create.html">Create User</a></li>
+                <li><a href="users.html">Users Information</a></li>
+            </ul>
+        </nav>
+        <form id="searchUserForm">
+            <div class="form-group">
+                <label for="userId">User ID:</label>
+                <input type="number" class="form-control" id="userId" required>
+            </div>
+            <button type="submit" class="btn btn-info">Find User</button>
+        </form>
+
+        <div id="searchResult"></div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody id="users_tbody_id"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/search.js"></script>
+</body>
+</html>
